@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main class="container py-5">
+    <section class="card card-body">
+        <h1 class="display-1 text-center">Tasks App</h1>
+        <p> Welcome to the last Tasks application that makes your life easier. Enjoy it!
+            Descover what you could do if you organize your tasks.
+        </p>
+        <div class="text-center">
+            <a class="btn btn-dark" href="{% url 'signin' %}">
+                Signin
+            </a>
+            <a class="btn btn-dark" href="{% url 'signup' %}">
+                Signup
+            </a>
+        </div>
+    </section>
+</main>
+{% endblock %}
